@@ -132,7 +132,7 @@ object os extends Module {
 
   object native extends Cross[OsNativeModule](scalaVersions)
   trait OsNativeModule extends OsModule with ScalaNativeModule {
-    def scalaNativeVersion = "0.4.5"
+    def scalaNativeVersion = "0.4.14"
     object test extends ScalaNativeTests with OsLibTestModule {
       def nativeLinkStubs = true
     }
